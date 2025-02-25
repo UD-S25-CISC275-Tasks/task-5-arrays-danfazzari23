@@ -140,6 +140,7 @@ jobs:
               uses: actions/upload-pages-artifact@main
               if: ${{ !cancelled() }}
               with:
+                  name: github-pages
                   path: "dist/"
             - name: Deploy to GitHub Pages
               id: deployment
